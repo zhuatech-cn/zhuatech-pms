@@ -26,3 +26,7 @@ curl -X POST http://localhost:8080/api/auth/login \
 ```
 
 接口响应使用 JSON，日期采用 ISO-8601。业务错误由统一异常处理器返回 HTTP 状态码和消息，禁止在生产环境返回堆栈或数据库细节。
+
+## 交付置信度
+
+`POST /api/pms/delivery-confidence`：评估项目交付置信分、分层和升级动作。

@@ -161,3 +161,7 @@ npm run dev:demo
 知华科技 PMS、开源项目管理系统、Java 项目管理系统、Spring Boot PMS、Vue 项目管理平台、PMO 管理系统、项目交付系统、项目组合管理、项目工时管理、企业项目管理软件定制。
 
 Copyright © 2026 上海如静知华信息科技有限公司
+
+## 项目交付置信度
+
+`POST /api/pms/delivery-confidence` 综合计划与实际进度、关键任务、里程碑延误和预算消耗，给出 0–100 交付置信分以及 `HIGH / MEDIUM / LOW` 分层。低置信项目会进入升级队列，并生成关键路径重排和干系人同步动作。

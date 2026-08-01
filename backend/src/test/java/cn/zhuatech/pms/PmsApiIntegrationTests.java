@@ -77,4 +77,15 @@ class PmsApiIntegrationTests {
     void anonymousRequestIsDenied() throws Exception {
         mvc.perform(get("/api/pms/projects")).andExpect(status().isForbidden());
     }
+
+    @Test
+    void managerCanEvaluateDeliveryConfidence() throws Exception {
+        String token = login("manager", "manager123");
+        mvc.perform(post("/api/pms/delivery-confidence").header("Authorization", "Bearer " + token)
+                .contentType(MediaType.APPLICATION_JSON)
+                .content("{\"projectCode\":\"PRJ-2026-018\",\"plannedProgress\":80,\"actualProgress\":55,\"openCriticalTasks\":3,\"milestoneDelayDays\":7,\"budgetUsedPercent\":75}"))
+            .andExpect(status().isOk()).andExpect(jsonPath("$.data.confidenceScore").value(22))
+            .andExpect(jsonPath("$.data.confidence").value("LOW"))
+            .andExpect(jsonPath("$.data.escalationRequired").value(true));
+    }
 }
