@@ -165,3 +165,7 @@ Copyright © 2026 上海如静知华信息科技有限公司
 ## 项目交付置信度
 
 `POST /api/pms/delivery-confidence` 综合计划与实际进度、关键任务、里程碑延误和预算消耗，给出 0–100 交付置信分以及 `HIGH / MEDIUM / LOW` 分层。低置信项目会进入升级队列，并生成关键路径重排和干系人同步动作。
+
+## 项目挣值健康分析
+
+新增 `POST /api/pms/insights/earned-value-health`，使用计划价值、挣值、实际成本和完工预算计算 SPI、CPI、完工估算与预算偏差，输出 `ON_TRACK / AT_RISK / CRITICAL`。项目经理可基于统一量化口径识别进度与成本失控。
