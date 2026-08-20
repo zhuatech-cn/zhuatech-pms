@@ -169,3 +169,7 @@ Copyright © 2026 上海如静知华信息科技有限公司
 ## 项目挣值健康分析
 
 新增 `POST /api/pms/insights/earned-value-health`，使用计划价值、挣值、实际成本和完工预算计算 SPI、CPI、完工估算与预算偏差，输出 `ON_TRACK / AT_RISK / CRITICAL`。项目经理可基于统一量化口径识别进度与成本失控。
+
+## 资源超载预测
+
+新增 `POST /api/pms/insights/resource-overload`，比较可用、计划和关键路径工时，叠加共享资源项目数、加班上限和技能缺口，输出负荷率、缺口、建议加班及调配工时，并返回 `BALANCED / MITIGATE / ESCALATE`。PMO 可提前处理跨项目资源争抢，避免关键路径临期失速。
