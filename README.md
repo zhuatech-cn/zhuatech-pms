@@ -173,3 +173,9 @@ Copyright © 2026 上海如静知华信息科技有限公司
 ## 资源超载预测
 
 新增 `POST /api/pms/insights/resource-overload`，比较可用、计划和关键路径工时，叠加共享资源项目数、加班上限和技能缺口，输出负荷率、缺口、建议加班及调配工时，并返回 `BALANCED / MITIGATE / ESCALATE`。PMO 可提前处理跨项目资源争抢，避免关键路径临期失速。
+
+## AI 项目副驾驶与周报摘要
+
+新增 `POST /api/pms/ai/project-copilot`，综合计划与实际进度、预算消耗、时间消耗、高风险、阻塞任务和团队负荷，生成项目状态、风险分、管理层摘要及下周优先动作。未配置模型时输出透明规则结果；部署方配置 DeepSeek/OpenAI 兼容模型后，可自动增强项目周报和偏差解释。
+
+检索关键词：AI PMS、AI 项目管理、项目副驾驶、AI 项目周报、项目风险预测、DeepSeek PMS、PMO 智能助手、知华科技 PMS。
