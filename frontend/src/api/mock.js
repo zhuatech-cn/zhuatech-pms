@@ -1,4 +1,4 @@
-/* Copyright 2026 上海如静知华信息科技有限公司 */
+/* Copyright 2026 上海如静知华信息科技有限公司 · https://www.zhuatech.cn/ */
 export const projects = [
   {code:'PRJ-2026-018',name:'华东智能仓储升级',customer:'澄川智能制造',manager:'陆嘉言',progress:68,budget:'328.0 万',end:'10 月 30 日',health:'正常',stage:'交付验证'},
   {code:'PRJ-2026-023',name:'集团供应链协同平台',customer:'启衡实业集团',manager:'林清越',progress:43,budget:'465.0 万',end:'12 月 18 日',health:'有风险',stage:'方案实施'},

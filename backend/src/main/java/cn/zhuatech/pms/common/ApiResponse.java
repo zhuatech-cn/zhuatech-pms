@@ -1,4 +1,4 @@
-/* Copyright 2026 上海如静知华信息科技有限公司 */
+/* Copyright 2026 上海如静知华信息科技有限公司 · https://www.zhuatech.cn/ */
 package cn.zhuatech.pms.common;
 import java.time.OffsetDateTime;
 public record ApiResponse<T>(boolean success,String message,T data,OffsetDateTime timestamp){

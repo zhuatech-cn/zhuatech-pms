@@ -1,4 +1,4 @@
-<!-- Copyright 2026 上海如静知华信息科技有限公司 -->
+<!-- Copyright 2026 上海如静知华信息科技有限公司 · https://www.zhuatech.cn/ -->
 <script setup>
 const groups = [
   {label:'项目运营', items:[['/admin/portfolio','组合驾驶舱','▦'],['/admin/projects','项目工作区','◫'],['/admin/delivery','交付任务','✓'],['/admin/risks','风险与资源','△']]},

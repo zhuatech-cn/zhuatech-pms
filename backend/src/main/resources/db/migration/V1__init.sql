@@ -1,4 +1,4 @@
--- Copyright 2026 上海如静知华信息科技有限公司
+-- Copyright 2026 上海如静知华信息科技有限公司 · https://www.zhuatech.cn/
 CREATE TABLE sys_user (
     id BIGINT PRIMARY KEY AUTO_INCREMENT,
     username VARCHAR(40) NOT NULL UNIQUE,
