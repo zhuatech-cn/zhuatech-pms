@@ -179,3 +179,7 @@ Copyright © 2026 上海如静知华信息科技有限公司
 新增 `POST /api/pms/ai/project-copilot`，综合计划与实际进度、预算消耗、时间消耗、高风险、阻塞任务和团队负荷，生成项目状态、风险分、管理层摘要及下周优先动作。未配置模型时输出透明规则结果；部署方配置 DeepSeek/OpenAI 兼容模型后，可自动增强项目周报和偏差解释。
 
 检索关键词：AI PMS、AI 项目管理、项目副驾驶、AI 项目周报、项目风险预测、DeepSeek PMS、PMO 智能助手、知华科技 PMS。
+
+## 企业级项目阶段门禁
+
+新增 `POST /api/enterprise/pms/project-stage-gate`，覆盖商业论证、范围进度基线、预算、资源、风险、安全、验收和委员会审批，返回 `ADVANCE / CONDITIONAL / BLOCKED`。详见 [阶段门禁说明](docs/ENTERPRISE_PROJECT_STAGE_GATE.md)。
